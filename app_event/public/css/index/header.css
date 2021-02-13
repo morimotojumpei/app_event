@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+/* -----------ここからヘッダー------------ */
+.top_category {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+@keyframes titleAnimation {
+  0%{
+    letter-spacing: 0.2em;
+    opacity: 0;
+  }
+}
+
+.left > h1 {
+  font-family: cursive ,sans-serif;
+  font-size: 50px;
+  animation: titleAnimation 1.5s;
+
+}
+
+
+.right > p {
+  margin: 0px;
+  line-height: 2;
+}
+
+.header_image {
+ position: relative;
+}
+
+.content {
+display: table;
+table-layout: fixed;
+text-align: center;
+width:100%;
+margin-bottom:20px;
+background:rgba(255, 255, 255, 0.4);
+position: absolute;
+top: 0;
+}
+
+.content li{
+cursor: pointer;
+display: table-cell;
+vertical-align:middle;
+border:1px solid #FFF;
+height: 50px;
+font-family: 'Caveat', cursive;
+box-sizing: border-box;
+}
+
+.content li :hover {
+  color:rgb(22, 153, 109);
+  text-decoration: underline;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px black;
+  transform: translate(0, -5px);
+}
+
+.content li a {
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  color:black;
+}
+
+.content li > a:before{
+  display: block;
+  padding-top:10px;
+	font-family: FontAwesome;
+}
+
+.menu1 > a:before{
+  content: '\f015';
+}
+
+.menu2 > a:before{
+	content: '\f298';
+}
+
+.menu3 > a:before{
+	content: '\f129';
+}
+
+.menu4 > a:before{
+	content: '\f505';
+}
+
+.menu5 > a:before{
+	content: '\f059';
+}
+
+.menu6 > a:before{
+	content: '\f164';
+}
